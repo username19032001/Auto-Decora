@@ -2,7 +2,7 @@
   "name": "botpress",
   "private": true,
   "scripts": {
-    "start": "turbo run start --filter=web"
+    "start": "PORT=3000 turbo run start --filter=web",
     "build": "turbo run generate && turbo run build",
     "bump": "depsynky bump --ignore-dev && pnpm -w install",
     "test": "vitest --run",
